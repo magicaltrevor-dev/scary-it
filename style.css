@@ -118,13 +118,13 @@
 }
 @media only screen and (max-width: 650px) {
     .header {
-      font-size: 36px;
+      font-size: 30px;
     }
     .text {
-      font-size: 30px;
+      font-size: 26px;
     }
   }
     .prev, .next {
-      padding: 50px;
-      font-size: 34px;
+      padding: 35px;
+      font-size: 30px;
   }
