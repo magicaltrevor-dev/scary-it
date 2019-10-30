@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" type="text/javascript"></script>
+
+        <audio controls autoplay loop>
+                <source src="The End.wav" type="audio/wav">
+                
+              
+            IT's hightime you upgraded your browser. Please use another browser in order to enjoy this project to the fullest.
+        </audio>
+</head>
+
+<header class="header">
+    <h1>IT.</h1>
+    <h3>BY TREVOR SORIANO</h3>
+    <p>IT WILL ALWAYS BE THERE. IT IS INEVITABLE. IT IS YOUR DECISION.</P>
+</header>
+<body class="background">
+    <div class="slideshow-container"></div>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+                <img src="https://live.staticflickr.com/2926/14804531141_02485ead8c_k.jpg" class="photos">
+            <div class="text">IT IS THE INHIBITION.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+                <img src="https://live.staticflickr.com/2901/14620933060_68590109ab_k.jpg" class="photos">
+            <div class="text">IT IS THE FEAR.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+                <img src="https://live.staticflickr.com/3843/14784642806_8d7f99dd49_k.jpg" class="photos">
+            <div class="text">IT IS EVERYTHING YOU HATE.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+                <img src="https://live.staticflickr.com/3894/14784643156_e44c75092c_k.jpg" class="photos">
+            <div class="text">IT IS THE DESTROYER.</div>
+        </div>    
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+                <img src="https://live.staticflickr.com/3846/14827483143_3ee7ff73f3_k.jpg" class="photos">
+            <div class="text">IT WILL FOLLOW YOU.</div>
+        </div>        
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+                <img src="https://live.staticflickr.com/3870/14621116127_4bd9f129a0_k.jpg" class="photos">
+            <div class="text">IT WILL BRING YOU DOWN.</div>
+        </div>  
+
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  <br>
+  <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    
+
+<p>My first paragraph.</p>
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+<footer>
+    <div class="footertext">
+        <p>Trevor Soriano</p>
+        <p>2019</p>
+        <p>trevor.d.soriano@gmail.com</p>
+    </div>
+
+</footer>
+</html>
